@@ -21,7 +21,7 @@ export default function Weather () {
 
      //api 가져오기
     const getWeatherByCurrentLocation= async (lat, lon)=>{
-     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=b4907ce44200e88bb23cf4b0cde72688`
+     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=`
      setVisible(true);
      let response = await fetch(url)
      let data = await response.json();

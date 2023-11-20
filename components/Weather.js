@@ -35,7 +35,7 @@ export default function Weather () {
       },[])
 
     const getWeatherByCity = async () => {
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b4907ce44200e88bb23cf4b0cde72688&units=metric`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=&units=metric`;
         setVisible(true);
         let response = await fetch(url);
         let data = await response.json();
